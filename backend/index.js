@@ -5,7 +5,7 @@ const { todo } = require("./db");
 
 const app = express();
 app.use(cors());
-
+app.use(express.json());
 
 app.get("/getAllTodos", async (req,res)=>{
 
